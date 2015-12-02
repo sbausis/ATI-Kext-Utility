@@ -388,7 +388,7 @@
 		D0F44EF01937342900972C24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "___FULLUSERNAME___";
 				TargetAttributes = {
 					D0F44F181937342A00972C24 = {
@@ -548,6 +548,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -609,6 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATI Kext Util/ATI Kext Util-Prefix.pch";
 				INFOPLIST_FILE = "ATI Kext Util/ATI Kext Util-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "at.pter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -622,6 +624,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATI Kext Util/ATI Kext Util-Prefix.pch";
 				INFOPLIST_FILE = "ATI Kext Util/ATI Kext Util-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "at.pter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -643,6 +646,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "ATI Kext UtilTests/ATI Kext UtilTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "at.pter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -661,6 +665,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ATI Kext Util/ATI Kext Util-Prefix.pch";
 				INFOPLIST_FILE = "ATI Kext UtilTests/ATI Kext UtilTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "at.pter.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
