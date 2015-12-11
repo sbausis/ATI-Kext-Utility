@@ -13,7 +13,8 @@
 {
     self = [super initWithWindow:window];
     if (self) {
-        _kextPath = @"/System/Library/Extensions/AMD4600Controller.kext";
+        //kextstat | egrep 'com.apple.kext.AMD[0-9]*Controller' | awk '{print $6}'
+        _kextPath = @"/System/Library/Extensions/AMD6000Controller.kext";
         connectorController = [[ConnectorWindowController alloc] initWithWindowNibName:@"ConnectorWindow"];
         documentController = [NSDocumentController sharedDocumentController];
     }
@@ -61,20 +62,20 @@
 
 - (IBAction)openConnectorWindow: (id)sender
 {
-//    NSError* error;
-//    NSString* biosPath = @"/Users/peter/Google Drive/Standrechner/PersonalityFMavericks/bios/1002_9498_9498174b.rom";
-//    RadeonBios* radeonBios = [[RadeonBios alloc] initWithBios:biosPath error:&error];
+    NSError* error;
+    NSString* biosPath = @"/Users/simonbaur/Desktop/radeon6470m/vbios.1002_6760.rom";
+    RadeonBios* radeonBios = [[RadeonBios alloc] initWithBios:biosPath error:&error];
     /*NSAlert *alert = [[NSAlert alloc] init];
     [alert setMessageText:@"hi"];
     [alert runModal];
     */
     
-    //[connectorController showWindow:self];
+    [connectorController showWindow:self];
     
 //    Driver* driver = [[Driver alloc]
-//                      initWithBinaryPath:@"/System/Library/Extensions/AMD4600Controller.kext/Contents/MacOS/AMD4600Controller"
+//                      initWithBinaryPath:@"/System/Library/Extensions/AMD6000Controller.kext/Contents/MacOS/AMD6000Controller"
 //                      andAtiPersonalityTool:@"/Users/peter/Google Drive/Standrechner/PersonalityFMavericks/tools/ati-personality.pl.0.15/ati-personality.pl"];
-//    
+//
 //    NSLog(@"%@", driver);
 }
 
